@@ -1,0 +1,4 @@
+attributetype ( 1.1.2.1.1 NAME 'x-equip'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringMatch
+	SYNTAX 
