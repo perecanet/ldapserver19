@@ -1,26 +1,26 @@
-attributetype ( 1.1.2.1.1 NAME 'x-equip'
-        DESC 'equip del futbolista'
+attributetype ( 1.1.2.1.1 NAME 'x-nommaster'
+        DESC 'nom del master'
         EQUALITY caseIgnoreMatch
         SUBSTR caseIgnoreSubstringsMatch
         SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
         SINGLE-VALUE )
 
 attributetype ( 1.1.2.1.2 NAME 'x-edat'
-        DESC 'dorsal del futbolista'
+        DESC 'edat del estudiant'
         SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
         SINGLE-VALUE )
 
 attributetype ( 1.1.2.1.3 NAME 'x-web'
-        DESC 'pagina web del futbolista'
+        DESC 'pagina web del estudiant'
         EQUALITY caseExactMatch
         SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
 
-attributetype ( 1.1.2.1.4 NAME 'x-foto'
+attributetype ( 1.1.2.1.4 NAME 'x-fotocarnet'
         DESC 'foto del estudiant'
         SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
 
-attributetype ( 1.1.2.1.5 NAME 'x-lesionat'
-        DESC 'lesio del futbolista'
+attributetype ( 1.1.2.1.5 NAME 'x-aprovat'
+        DESC 'master aprovat'
         SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
         SINGLE-VALUE )
 
@@ -28,7 +28,6 @@ objectclass ( 1.1.2.2.1 NAME 'x-master'
         DESC 'master'
         SUP TOP
         AUXILIARY
-        MUST uid
-        MAY ( uidNumber $ gidNumber $ mail $ ou  ) )
-
+        MUST x-nommaster
+        MAY ( x-edat $ x-web $ x-fotocarnet $ x-aprovat ) )
 

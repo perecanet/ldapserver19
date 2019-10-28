@@ -1,0 +1,28 @@
+dn: uid=maradona,ou=Productes,dc=edt,dc=org
+objectclass: inetOrgPerson
+objectclass: x-master
+cn: maradona
+cn: diego
+sn: maradona
+x-nommaster: quimica
+x-edat: 25
+x-web: www.seat.es
+x-fotocarnet: ///var/tmp/foto2.jpg
+x-aprovat: TRUE
+homePhone: 555-555-555
+mail: metadona@edt.org
+
+dn: uid=cantona,ou=Productes,dc=edt,dc=org
+objectclass: inetOrgPerson
+objectclass: x-master
+cn: cantona
+cn: eric
+sn: cantona
+x-nommaster: bioquimica
+x-edat: 23
+x-web: www.fiat.es
+x-fotocarnet: ///var/tmp/foto.jpg
+x-aprovat: FALSE
+homePhone: 555-555-555
+mail: patada@edt.org
+
