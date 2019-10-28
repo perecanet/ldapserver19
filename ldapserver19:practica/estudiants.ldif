@@ -7,7 +7,7 @@ sn: maradona
 x-nommaster: quimica
 x-edat: 25
 x-web: www.seat.es
-x-fotocarnet: ///var/tmp/foto2.jpg
+x-fotocarnet:< file:///var/tmp/foto2.jpg
 x-aprovat: TRUE
 homePhone: 555-555-555
 mail: metadona@edt.org
@@ -21,7 +21,7 @@ sn: cantona
 x-nommaster: bioquimica
 x-edat: 23
 x-web: www.fiat.es
-x-fotocarnet: ///var/tmp/foto.jpg
+x-fotocarnet:< file:///var/tmp/foto.jpg
 x-aprovat: FALSE
 homePhone: 555-555-555
 mail: patada@edt.org
